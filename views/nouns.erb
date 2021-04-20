@@ -1,0 +1,17 @@
+<h1>HERE ARE SOME NOUNS</h1>
+
+<ul>
+<% @nouns.each do |noun| %>
+  <li><%= noun %></li>
+<% end %>
+</ul>
+
+<%# this works for one line, but if you want to comment out a whole section  %>
+<%# the below is what real developers do, even though it looks stupid %>
+<% if false %>
+<select name="cars" id="cars">
+  <% @nouns.each do |noun| %>
+  <option value=<%= noun %>><%= noun %></option>
+  <% end %>
+</select>
+<% end %>
